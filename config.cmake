@@ -282,7 +282,7 @@ set(USE_CLML_GRAPH_EXECUTOR OFF)
 set(USE_ANTLR OFF)
 
 # Whether use Relay debug mode
-set(USE_RELAY_DEBUG OFF)
+set(USE_RELAY_DEBUG ON)
 
 # Whether to build fast VTA simulator driver
 set(USE_VTA_FSIM OFF)
@@ -313,7 +313,7 @@ set(USE_HEXAGON OFF)
 set(USE_HEXAGON_SDK /path/to/sdk)
 
 # Whether to build the minimal support android rpc server for Hexagon
-set(USE_HEXAGON_RPC OFF)
+set(USE_HEXAGON_RPC ON)
 
 # Hexagon architecture to target when compiling TVM itself (not the target for
 # compiling _by_ TVM). This applies to components like the TVM runtime, but is
@@ -321,9 +321,6 @@ set(USE_HEXAGON_RPC OFF)
 # building runtime for Android.
 # Valid values are v65, v66, v68, v69.
 set(USE_HEXAGON_ARCH "v66")
-
-# Whether to use QHL library
-set(USE_HEXAGON_QHL OFF)
 
 # Whether to use ONNX codegen
 set(USE_TARGET_ONNX OFF)
@@ -383,6 +380,3 @@ set(SUMMARIZE OFF)
 # To enable pass the path to the root libtorch (or PyTorch) directory
 # OFF or /path/to/torch/
 set(USE_LIBTORCH OFF)
-
-# Whether to use the Universal Modular Accelerator Interface
-set(USE_UMA OFF)
